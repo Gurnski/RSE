@@ -28,12 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            injectButton = new Button();
+            SuspendLayout();
+            // 
+            // injectButton
+            // 
+            injectButton.Location = new Point(713, 12);
+            injectButton.Name = "injectButton";
+            injectButton.Size = new Size(75, 23);
+            injectButton.TabIndex = 0;
+            injectButton.Text = "Inject";
+            injectButton.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(injectButton);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button injectButton;
     }
 }
